@@ -6,6 +6,7 @@ import { KenzieProjects } from './views/KenzieProjects';
 import { PersonalProjects } from './views/PersonalProjects';
 import { Route, Switch } from "react-router-dom";
 import { Base } from './views/Base';
+import { AboutMe } from './views/AboutMe';
 
 
 
@@ -17,6 +18,7 @@ function App() {
       <Switch>
       <Route exact path='/kenzie-projects' component={KenzieProjects} />
       <Route exact path='/personal-projects' component={PersonalProjects} />
+      <Route exact path='/about-me' component={AboutMe} />
       </Switch>
     </Fragment>
   );

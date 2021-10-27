@@ -6,7 +6,9 @@ export const NavigationBar = (props) => {
         <Fragment>
             <nav className="navbar navbar-dark bg-dark">
                 <div className="container-fluid">
+                    <Link to='/'>
                     <a className="navbar-brand" href="#"><b><i>Jacob Shorts Portfolio</i></b></a>
+                    </Link>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
@@ -22,6 +24,9 @@ export const NavigationBar = (props) => {
                             </li>
                             <Link to="/personal-projects" style={{ color: "gold" }}>
                                 Personal Projects
+                            </Link>
+                            <Link to="/about-me" style={{ color: "gold" }}>
+                                About Me
                             </Link>
                         </ul>
                         <span className="navbar-text" style={{ color: "gold" }}>
