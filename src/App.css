@@ -1,0 +1,14 @@
+.intro-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+  }
+
+
+.projects-container {
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    width: auto;
+  }
