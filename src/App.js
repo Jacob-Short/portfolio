@@ -4,24 +4,20 @@ import { Introduction } from './components/Introdution';
 import { NavigationBar } from './components/NavigationBar';
 import { KenzieProjects } from './views/KenzieProjects';
 import { PersonalProjects } from './views/PersonalProjects';
+import { Route, Switch } from "react-router-dom";
+import { Base } from './views/Base';
+
+
 
 function App() {
   return (
     <Fragment>
       <NavigationBar />
-      <div className='intro-container'>
-        <div>
-      <Introduction />
-      </div>
-      </div>
-      <div className='projects-container'>
-        <div>
-      <KenzieProjects />
-      </div>
-      <div>
-      <PersonalProjects />
-      </div>
-      </div>
+      <Route exact path='/' component={Base} />
+      <Switch>
+      <Route exact path='/kenzie-projects' component={KenzieProjects} />
+      <Route exact path='/personal-projects' component={PersonalProjects} />
+      </Switch>
     </Fragment>
   );
 }
