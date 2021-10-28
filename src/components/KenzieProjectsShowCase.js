@@ -17,7 +17,7 @@ export const KenzieProjectsShowCase = () => {
                 </ul>
                 <div className="card-body">
                     <a href="#" className="card-link">See All Projects</a>
-                    <a href="#" className="card-link">Github</a>
+                    <a href="https://github.com/Jacob-Short" className="card-link">Github</a>
                 </div>
             </div>
         </Fragment>
