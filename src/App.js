@@ -1,6 +1,5 @@
 import React, { Fragment } from 'react';
 import './App.css';
-import { Introduction } from './components/Introdution';
 import { NavigationBar } from './components/NavigationBar';
 import { KenzieProjects } from './views/KenzieProjects';
 import { PersonalProjects } from './views/PersonalProjects';

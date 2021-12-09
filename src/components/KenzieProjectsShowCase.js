@@ -1,12 +1,14 @@
 import React, { Fragment } from "react";
 import { Link } from "react-router-dom";
-import CapstoneHomePhoto from '../images/CapstoneHome.png' 
+import CapstoneHomePhoto from "../images/CapstoneHome.png";
 
 export const KenzieProjectsShowCase = () => {
   return (
     <Fragment>
-      <h4>Kenzie Projects</h4>
-      <div className="card" style={{ width: 18 + "rem" }}>
+      <Link to="/kenzie-projects">
+        <h4>Kenzie Projects</h4>
+      </Link>
+      <div className="card" style={{ width: 60 + "rem" }}>
         <img
           src={CapstoneHomePhoto}
           className="card-img-top"
@@ -20,8 +22,8 @@ export const KenzieProjectsShowCase = () => {
           </p>
         </div>
         <ul className="list-group list-group-flush">
-            <a href='https://github.com/Jacob-Short/Q4-Capstone'>
-          <li className="list-group-item">GamerZone</li>
+          <a href="https://github.com/Jacob-Short/Q4-Capstone">
+            <li className="list-group-item">GamerZone</li>
           </a>
           <li className="list-group-item">Bird Space</li>
           <li className="list-group-item">MMG</li>

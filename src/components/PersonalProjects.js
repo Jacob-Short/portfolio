@@ -5,8 +5,10 @@ import CryptoTrackerPhoto from "../images/CryptoTracker.png";
 export const PersonalProjectsShowCase = () => {
   return (
     <Fragment>
-      <h4>Personal Projects</h4>
-      <div className="card" style={{ width: 18 + "rem" }}>
+      <Link to="/personal-projects">
+        <h4>Personal Projects</h4>
+      </Link>
+      <div className="card" style={{ width: 60 + "rem" }}>
         <img
           src={CryptoTrackerPhoto}
           className="card-img-top"
